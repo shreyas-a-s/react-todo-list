@@ -17,12 +17,14 @@ export default function App() {
             <input type="checkbox"/>
             item 1
           </label>
+          <button className="btn btn-danger">Delete</button>
         </li>
         <li>
           <label>
             <input type="checkbox"/>
             item 2
           </label>
+          <button className="btn btn-danger">Delete</button>
         </li>
       </ul>
     </>
