@@ -11,6 +11,20 @@ export default function App() {
         <button className="btn">Add</button>
       </form>
       <h1 className="header">Todo List</h1>
+      <ul className="list">
+        <li>
+          <label>
+            <input type="checkbox"/>
+            item 1
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox"/>
+            item 2
+          </label>
+        </li>
+      </ul>
     </>
   )
 }
