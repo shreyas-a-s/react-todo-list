@@ -10,6 +10,7 @@ export default function App() {
     setTodos((currentTodos) => {
       return [...currentTodos, { id: crypto.randomUUID(), title: newItem, completed: false }]
     })
+    setNewItem("")
   }
 
   return (
