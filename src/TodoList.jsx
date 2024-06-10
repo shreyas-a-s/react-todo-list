@@ -1,16 +1,12 @@
+import { TodoItem } from "./TodoItem.jsx"
+
 export function TodoList({ todos, toggleTodo, deleteTodo }) {
   return (
     <ul className="list">
       {todos.length === 0 && "No Todos"}
       {todos.map(todo => {
         return (
-          <li>
-            <label>
-              <input type="checkbox" checked={todo.completed} onChange={e => toggleTodo(todo.id, e.target.checked)}/>
-              {todo.title}
-            </label>
-            <button onClick={() => deleteTodo(todo.id)} className="btn btn-danger">Delete</button>
-          </li>
+          <TodoItem id={todo.id} title={todo.title} completed={todo.completed} toggleTodo={toggleTodo} deleteTodo={deleteTodo} key={todo.id}/>
         )
       })}
     </ul>
